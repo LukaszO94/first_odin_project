@@ -52,13 +52,16 @@ a {
     padding: 36px;
 }
 
-img {
-    border-radius: 50%;
+
+.right img {
     flex-shrink: 0;
+    border-radius: 50%;
 }
 
-.right {
-    flex-shrink: 0;
+.right img:hover {
+    transform: rotate(1turn);
+    transition-duration: 4s;
+
 }
 
 .left {
@@ -101,14 +104,16 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px;
+    padding-bottom: 120px;
+    padding-top: 60px;
+    gap: 60px;
 }
 
 .random {
     font-size: 36px;
     font-weight: bold;
     color: #1f2937;
-    margin: 36px;
+    
 }
 
 .blocks {
@@ -134,4 +139,11 @@ button:hover {
 }
 .subtex {
     text-align: center;
+    color: #1f2937;
+}
+
+.card .img:hover {
+    transform: scale(1.1);
+
+    transition-duration: 1s;
 }
